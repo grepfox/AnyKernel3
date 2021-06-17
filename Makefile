@@ -1,4 +1,4 @@
-NAME ?= aLn-Kernel-for-lavender
+NAME ?= aLn-vayu
 DATE := $(shell date "+%Y%m%d-%H%M")
 ZIP := $(NAME)-$(DATE).zip
 
