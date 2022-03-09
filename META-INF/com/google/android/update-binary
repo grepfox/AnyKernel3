@@ -344,6 +344,13 @@ do_levelcheck() {
     abort " " "Unsupported Android security patch level. Aborting...";
   fi;
 }
+do_unpackcmpx() {
+  if [ -f kernel.dat ]; then
+    ui_print "Decompressing image..."
+    PATH="$AKHOME/bin:$PATH" tar -xf kernel.dat
+    rm kernel.dat
+  fi
+}
 dump_moduleinfo() {
 $BB cat <<EOF > $1;
 name=AK3 Helper Module
@@ -480,6 +487,7 @@ setup_env;
 do_devicecheck;
 do_versioncheck;
 do_levelcheck;
+do_unpackcmpx;
 
 ui_print "Installing...";
 CORE=$($BB grep -oE 'ak.*core.sh' anykernel.sh);
