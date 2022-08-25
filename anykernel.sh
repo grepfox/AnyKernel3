@@ -15,7 +15,7 @@ device.name2=
 device.name3=
 device.name4=
 device.name5=
-supported.versions=11 - 12
+supported.versions=11 - 13
 supported.patchlevels=
 '; } # end properties
 
