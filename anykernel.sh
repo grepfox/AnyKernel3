@@ -4,7 +4,7 @@
 ## AnyKernel setup
 # begin properties
 properties() { '
-kernel.string=aLn Kernel by alanndz @ telegram
+kernel.string=PerfIgnite
 do.devicecheck=1
 do.modules=0
 do.systemless=1
